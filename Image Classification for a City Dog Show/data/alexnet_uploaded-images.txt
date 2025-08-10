@@ -1,0 +1,99 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 7 key-value pairs.
+Below are 7 of them:
+ 1 key:              Basenji_00964.jpg  label:                    basenji
+ 2 key:              Basenji_00963.jpg  label:                    basenji
+ 3 key:                Boxer_02426.jpg  label:                      boxer
+ 4 key:                     cat_01.jpg  label:                        cat
+ 5 key:       Boston_terrier_02259.jpg  label:             boston terrier
+ 6 key:               Beagle_01125.jpg  label:                     beagle
+ 7 key:              Sports_Car_01.jpg  label:                 sports car
+
+     MATCH:
+
+             Basenji_00963.jpg: 
+Real:                    basenji   Classifier:                        basenji
+
+               Boxer_02426.jpg: 
+Real:                      boxer   Classifier:                          boxer
+
+      Boston_terrier_02259.jpg: 
+Real:             boston terrier   Classifier:    boston bull, boston terrier
+
+              Beagle_01125.jpg: 
+Real:                     beagle   Classifier:                         beagle
+
+             Sports_Car_01.jpg: 
+Real:                 sports car   Classifier:          sports car, sport car
+
+ NOT A MATCH:
+
+             Basenji_00964.jpg: 
+Real:                    basenji   Classifier:              italian greyhound
+
+                    cat_01.jpg: 
+Real:                        cat   Classifier: african hunting dog, hyena dog, cape hunting dog, lycaon pictus
+
+# Total Images 7 # Matches: 5 # NOT Matches: 2
+
+     MATCH:
+
+             Basenji_00963.jpg: 
+Real:                    basenji   Classifier:                        basenji  
+PetLabelDog: 1  ClassLabelDog: 1
+
+               Boxer_02426.jpg: 
+Real:                      boxer   Classifier:                          boxer  
+PetLabelDog: 1  ClassLabelDog: 1
+
+      Boston_terrier_02259.jpg: 
+Real:             boston terrier   Classifier:    boston bull, boston terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+              Beagle_01125.jpg: 
+Real:                     beagle   Classifier:                         beagle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+             Sports_Car_01.jpg: 
+Real:                 sports car   Classifier:          sports car, sport car  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+             Basenji_00964.jpg: 
+Real:                    basenji   Classifier:              italian greyhound  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    cat_01.jpg: 
+Real:                        cat   Classifier: african hunting dog, hyena dog, cape hunting dog, lycaon pictus  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 7 # Matches: 5 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  7  N Dog Images:  5  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  7  N Dog Images:  5  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   7
+N Dog Images        :   5
+N Not-Dog Images    :   2
+  
+pct_match           : 71.42857142857143
+pct_correct_dogs    : 100.0
+pct_correct_breed   : 80.0
+pct_correct_notdogs : 100.0
+
+INCORRECT Dog Breed Assignment:
+Real:                    basenji   Classifier:              italian greyhound
+
+** Total Elapsed Runtime: 0:0:0
